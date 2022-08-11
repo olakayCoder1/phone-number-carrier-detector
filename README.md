@@ -15,4 +15,5 @@ The task in the project is to detect the phone number carrier a visitor to my re
 
 
 
+
 &copy; [AltSchool Africa](https://www.altschoolafrica.com/)
