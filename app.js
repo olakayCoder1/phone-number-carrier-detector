@@ -67,7 +67,7 @@ const numberCarriers = {
     const password1 = event.target.password_outlined.value
     const password2 = event.target.password2_outlined.value
     if( password1 === password2 ){
-        if( password1.length > 8 ){
+        if( password1.length >= 8 ){
             event.target.username_outlined.value = ''
             event.target.password_outlined.value = ''
             event.target.password2_outlined.value = ''
