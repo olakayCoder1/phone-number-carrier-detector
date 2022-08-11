@@ -61,4 +61,23 @@ const numberCarriers = {
   
   
   
-  
+ function handleSubmit(event){
+    event.preventDefault()
+    const username = event.target.username_outlined.value
+    const password1 = event.target.password_outlined.value
+    const password2 = event.target.password2_outlined.value
+    if( password1 === password2 ){
+        if( password1.length > 8 ){
+            alert(`${username} thanks for the time taking to fill the form. Bless you`)
+        }else{
+            document.getElementById('password-error').innerText = 'Password must atleast be 8 character long'
+        }
+
+    }else{
+        document.getElementById('password-error').innerText = 'Password does not match'
+    }
+ }
+
+
+ const form = document.getElementById('phone_form');
+form.addEventListener('submit', handleSubmit)
